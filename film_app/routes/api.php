@@ -22,7 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//Route::get('/films', [FilmController::class,'index']);
 Route::get('/directors', [DirectorController::class,'index']);
 Route::get('/genres', [GenreController::class,'index']);
 
@@ -30,11 +29,6 @@ Route::get('/films/{id}', [FilmController::class,'show']);
 Route::get('/directors/{id}', [DirectorController::class,'show']);
 Route::get('/genres/{id}', [GenreController::class,'show']);
 
-
-
-Route::post('/addFilm', [FilmController::class,'create']);
-Route::post('/addDirector', [DirectorController::class,'store']); //zameni
-Route::post('/addGenre', [GenreController::class,'store']); //zameni
 
 Route::post('/register', [AuthController::class,'register']);
 Route::post('/login', [AuthController::class,'login']);
