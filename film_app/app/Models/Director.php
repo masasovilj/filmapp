@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Director extends Model
 {
-    use HasFactory;
+    use HasFactory; 
     protected $fillable=['id','name','biography'];
 
     public function films(){
