@@ -31,7 +31,7 @@ class FilmController extends Controller
             'description' => 'required|string|max:255',
             'genre_id'=>'required',
             'director_id'=>'required',
-          
+            
             
         ]);
 
