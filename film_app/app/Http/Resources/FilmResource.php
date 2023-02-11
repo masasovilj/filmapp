@@ -13,7 +13,7 @@ class FilmResource extends JsonResource
      * @param  \Illuminate\Http\Request  $request
      * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
      */
-    //ovde imam spoljne kljuceve pa ih vadim iz resources drugih
+    
     public static $wrap='films';
     public function toArray($request)
     {
