@@ -35,7 +35,7 @@ class AuthController extends Controller
         ->json(['data'=>$user,'access_token'=>$token,'token_type'=>"Bearer",]);
     }
    
-
+    
     public function login(Request $request)
     {
         if (!Auth::attempt($request->only('email', 'password'))) {
