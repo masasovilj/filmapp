@@ -44,4 +44,3 @@ class FilmSeeder extends Seeder
 
     }
     }
-
